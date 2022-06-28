@@ -44,6 +44,7 @@ ext_source = custom_target(
 
 py3.extension_module(
   ext_module_name,
+  ext_f_src,
   ext_source,
   incdir_f2py+'/fortranobject.c',
   include_directories: inc_np,
